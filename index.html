@@ -20,7 +20,11 @@
         .contact-info {
             border: 1px solid #ccc; /* Bordo grigio */
             padding: 20px; /* Spaziatura interna */
-            text-align: right; /* Allineamento del testo a destra */
+            text-align: left; /* Allineamento del testo a sinistra */
+            position: absolute; /* Posizione assoluta */
+            top: 10px; /* Distanza dalla parte superiore */
+            right: 10px; /* Distanza dalla parte destra */
+            width: 200px; /* Larghezza del riquadro */
         }
     </style>
 </head>
@@ -49,13 +53,9 @@
 </div>
 
 <!-- Riquadro delle informazioni di contatto -->
-<div class="container mt-3">
-    <div class="row">
-        <div class="col-md-8 offset-md-4 contact-info">
-            <p>Stefano Di Maulo</p>
-            <p>N. Tel: 3398686616</p>
-        </div>
-    </div>
+<div class="container contact-info">
+    <p>Stefano Di Maulo</p>
+    <p>N. Tel: 3398686616</p>
 </div>
 
 <!-- Collegamento al file JavaScript di Bootstrap -->

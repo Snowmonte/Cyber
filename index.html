@@ -11,11 +11,16 @@
         .profile-img {
             max-width: 200px; /* Larghezza massima dell'immagine */
             display: block; /* Per centrare l'immagine */
-            margin: 0 auto; /* Per centrare l'immagine */
         }
 
         .profile-text {
             text-align: left; /* Allineamento del testo a sinistra */
+        }
+
+        .contact-info {
+            border: 1px solid #ccc; /* Bordo grigio */
+            padding: 20px; /* Spaziatura interna */
+            text-align: right; /* Allineamento del testo a destra */
         }
     </style>
 </head>
@@ -29,14 +34,26 @@
 <!-- Contenuto principale -->
 <div class="container mt-5">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-4">
             <!-- Immagine del profilo -->
             <img src="foto.jpeg" alt="Stefano Di Maulo" class="img-fluid rounded-circle profile-img">
+        </div>
+        <div class="col-md-8">
             <!-- Introduzione sulla cybersecurity -->
             <div class="profile-text">
                 <h1>Benvenuti!</h1>
                 <p>Sono Stefano Di Maulo e sono un appassionato di cybersecurity. Mi dedico a proteggere le informazioni e i sistemi digitali da minacce informatiche. La cybersecurity è fondamentale nell'era digitale in cui viviamo, e cerco costantemente di imparare e contribuire a rendere il mondo online un posto più sicuro.</p>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- Riquadro delle informazioni di contatto -->
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 offset-md-4 contact-info">
+            <p>Stefano Di Maulo</p>
+            <p>N. Tel: 3398686616</p>
         </div>
     </div>
 </div>

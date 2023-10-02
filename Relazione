@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+<title>Relazione su SQL Injection e Cross-Site Scripting (XSS)</title>
+    <style>
+        /* Stile per
 
+       
+
+        /* Stile per il contenuto */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Stile per l'intestazione */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Stile per i paragrafi */
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* Stile per la firma e la data */
+        .signature {
+            text-align: right;
+            font-style: italic;
+        }
+    </style>
+
+</head
+</head>
+<body>
+    
+    <
+
+   
+<div class="content">
+        
+        <
+
+       
+<h1>Relazione su SQL Injection e Cross-Site Scripting (XSS)</h1>
+
+        
+
+<h2>SQL Injection</h2>
+        <p>SQL Injection è una vulnerabilità comune che si verifica quando un'applicazione web non tratta correttamente le query SQL inserite dagli utenti. Un attaccante sfrutta questa vulnerabilità inserendo input malevoli che possono alterare o rivelare dati dal database sottostante. Le considerazioni chiave includono:</p>
+        <ul>
+            <li>Fase di Iniezione</li>
+            <li>Query SQL Malevole</li>
+            <li>Rischi</li>
+            <li>Prevenzione</li>
+        </ul>
+
+        <h3>Esempio di SQL Injection:</h3>
+        <p>Supponiamo di avere un sito web con un modulo di login. L'attacco di SQL injection può verificarsi quando un utente malintenzionato inserisce il seguente input nel campo di login:</p>
+        <pre>' OR '1'='1</pre>
+        <p>Poiché '1'='1' è sempre vero, questa query restituirà tutti gli utenti nel database, consentendo all'attaccante di accedere senza fornire le credenziali corrette.</p>
+
+        <h2>Cross-Site Scripting (XSS)</h2>
+        <p>Cross-Site Scripting (XSS) è una vulnerabilità che consente a un attaccante di inserire script malevoli all'interno delle pagine web visualizzate da altri utenti. Le considerazioni chiave includono:</p>
+        
+        <
+
+       
+<ul>
+            
+            <
+
+           
+<li>Tipo di XSS</li>
+            
+           
+<li>Rischi</li>
+            <li>Prevenzione</li>
+        
+        </ul
+</ul>
+
+        <h3>Esempio di Cross-Site Scripting (XSS):</h3>
+        
+       
+<p>Supponiamo di avere un sito web con un modulo di commento in cui gli utenti possono inserire commenti. L'attacco di XSS può verificarsi quando un utente malintenzionato inserisce il seguente commento:</p>
+        
+        <
+<pre>&lt;script&gt;alert('Hacked!')&lt;/script&gt;</pre>
+        <p>Quando questo commento viene visualizzato da altri utenti sul sito, lo script viene eseguito nei loro browser e mostra una finestra di avviso con il testo "Hacked!".</p>
+
+        <p>È essenziale per gli sviluppatori di applicazioni web comprendere queste vulnerabilità e prendere misure per prevenirle. Le organizzazioni spesso conducono test di sicurezza delle applicazioni per identificare e mitigare queste e altre vulnerabilità prima che vengano sfruttate da attaccanti reali.</p>
+
+        <p>Questi sono solo esempi educativi e dimostrativi. È importante sottolineare che queste azioni sono illegali e dannose se eseguite senza autorizzazione su siti web reali. La sicurezza informatica è una priorità e dovrebbe essere utilizzata per proteggere i sistemi, non per danneggiarli.</p>
+
+        
+
+        <
+<div class="signature">
+            Di Maulo Stefano
+            Di Maulo
+
+            Di Maul
+
+           
+<br>
+            22/09/2023
+        
+            22/09/2023
+        </div
+
+            22/
+</div>
+    
+    </div
+</div>
+</body>
+</html>
